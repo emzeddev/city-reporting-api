@@ -35,8 +35,8 @@ class Otp extends Model
             $pass = config('app.payamak_pass');
             $fromNum = config('app.payamak_from');
             $toNum = array($phone);
-            $pattern_code = "lmvqcyez6tmb8k6";
-            $input_data = array("token" => $randCode);
+            $pattern_code = "hdsxp8rpsuerefo";
+            $input_data = array("verification-code" => $randCode);
             $client->sendPatternSms($fromNum, $toNum, $user, $pass, $pattern_code, $input_data);
 
 

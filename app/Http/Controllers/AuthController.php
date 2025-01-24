@@ -140,7 +140,7 @@ class AuthController extends Controller implements HasMiddleware
 
         $data = [
             "name" => $request->name,
-            "mobile" => "0".$request->mobile
+            "mobile" => $request->mobile
         ];
 
 
